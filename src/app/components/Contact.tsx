@@ -5,7 +5,6 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  Send,
   Clock
 } from "lucide-react";
 // import { Button } from "@/components/ui/button";
@@ -24,33 +23,6 @@ const Contact = () => {
     guests: "",
     message: ""
   });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    
-    // Show success toast
-    // toast({
-    //   title: "Inquiry Sent!",
-    //   description: "Thank you for your interest. We'll get back to you within 24 hours.",
-    // });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      checkIn: "",
-      checkOut: "",
-      guests: "",
-      message: ""
-    });
-  };
 
   return (
     <section id="contact" className="py-20 bg-white w-full">
