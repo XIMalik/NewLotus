@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Twitter, ArrowUp } from "lucide-react";
+import {Instagram, Twitter, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {

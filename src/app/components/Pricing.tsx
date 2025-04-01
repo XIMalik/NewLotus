@@ -3,7 +3,6 @@ import {
     Calendar, 
     Users, 
     CreditCard, 
-    Clock 
   } from "lucide-react";
   
   const pricingData = {

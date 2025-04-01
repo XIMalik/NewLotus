@@ -145,7 +145,7 @@ import {
                 <div className="bg-orange-50 rounded-full p-1 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <div className="bg-orange-400 rounded-full w-1.5 h-1.5"></div>
                 </div>
-                <span className="text-gray-700">Lost property will be held for 30 days and can be shipped at guest's expense</span>
+                <span className="text-gray-700">Lost property will be held for 30 days and can be shipped at guests expense</span>
               </li>
             </ul>
             <p className="text-gray-700 italic">

@@ -1,28 +1,14 @@
 "use client"
 
-import { useState } from "react";
 import { 
   MapPin, 
   Phone, 
   Mail, 
   Clock
 } from "lucide-react";
-// import { Button } from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
-// import { Textarea } from "@/components/ui/textarea";
-// import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
 //   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    checkIn: "",
-    checkOut: "",
-    guests: "",
-    message: ""
-  });
 
   return (
     <section id="contact" className="py-20 bg-white w-full">
