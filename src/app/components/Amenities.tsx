@@ -1,4 +1,4 @@
-import { Wifi, Tv, Car, Utensils, ShowerHead, AirVent, Dumbbell, Lock, Flower2, Bath, MapPin, Bed } from "lucide-react";
+import { Wifi, Tv, Car, Utensils, ShowerHead, AirVent, Lock, Flower2, MapPin, Bed } from "lucide-react";
 
 const amenities = [
   {
