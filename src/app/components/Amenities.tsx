@@ -9,7 +9,7 @@ const amenities = [
   {
     icon: <Tv className="h-8 w-8 text-lotus-orange" />,
     title: "Smart Entertainment",
-    description: "65-inch 4K smart TVs with Netflix, Amazon Prime, and cable channels in every room."
+    description: "Smart TVs with Netflix, Amazon Prime, and cable channels in all apartments."
   },
   {
     icon: <Car className="h-8 w-8 text-lotus-orange" />,
@@ -19,47 +19,47 @@ const amenities = [
   {
     icon: <Utensils className="h-8 w-8 text-lotus-orange" />,
     title: "Fully Equipped Kitchen",
-    description: "Modern kitchen with high-end appliances, cookware, and premium coffee maker."
+    description: "Modern kitchen with high-end appliances and cookware."
   },
   {
     icon: <ShowerHead className="h-8 w-8 text-lotus-orange" />,
-    title: "Luxury Bathrooms",
-    description: "Rainfall showers, premium toiletries, and plush towels in all bathrooms."
+    title: "Bathrooms",
+    description: "Rainfall showers, premium toiletries, and soft towels in all bathrooms."
   },
   {
     icon: <AirVent className="h-8 w-8 text-lotus-orange" />,
     title: "Climate Control",
     description: "Individual temperature control in each room for your perfect comfort level."
   },
-  {
-    icon: <Dumbbell className="h-8 w-8 text-lotus-orange" />,
-    title: "Fitness Room",
-    description: "Access to a private gym with cardio equipment and free weights."
-  },
+  // {
+  //   icon: <Dumbbell className="h-8 w-8 text-lotus-orange" />,
+  //   title: "Fitness Room",
+  //   description: "Access to a private gym with cardio equipment and free weights."
+  // },
   {
     icon: <Lock className="h-8 w-8 text-lotus-orange" />,
     title: "Security System",
-    description: "24/7 security with smart locks, cameras, and secure gated entrance."
+    description: "24/7 security with cameras, and secure gated entrance."
   },
   {
     icon: <Flower2 className="h-8 w-8 text-lotus-orange" />,
-    title: "Private Garden",
+    title: "Garden",
     description: "Beautifully landscaped outdoor space perfect for relaxation and entertainment."
   },
-  {
-    icon: <Bath className="h-8 w-8 text-lotus-orange" />,
-    title: "Swimming Pool",
-    description: "Exclusive access to our refreshing pool with lounging area."
-  },
+  // {
+  //   icon: <Bath className="h-8 w-8 text-lotus-orange" />,
+  //   title: "Swimming Pool",
+  //   description: "Exclusive access to our refreshing pool with lounging area."
+  // },
   {
     icon: <MapPin className="h-8 w-8 text-lotus-orange" />,
     title: "Prime Location",
-    description: "Situated in the heart of Ilorin, minutes away from restaurants, shops, and attractions."
+    description: "Situated in the heart of Ilorin, minutes away from restaurants, shops, and main attractions."
   },
   {
     icon: <Bed className="h-8 w-8 text-lotus-orange" />,
     title: "Premium Bedding",
-    description: "King-size beds with memory foam mattresses and luxury linens for ultimate comfort."
+    description: "Full-size beds with lustful mattresses and pristine materials for ultimate comfort."
   }
 ];
 

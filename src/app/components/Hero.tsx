@@ -1,48 +1,46 @@
 "use client";
-import { useState, useRef } from 'react';
-
+import { useState, useRef } from "react";
+import { Phone, Mail } from "lucide-react";
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Function to open the modal and play video
+  // Open & close video modal
   const openModal = () => {
     setIsModalOpen(true);
-    // Play video when modal opens (with a short delay to ensure DOM is ready)
     setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.play().catch(e => console.log("Auto-play prevented:", e));
-      }
+      videoRef.current?.play().catch((e) => console.log("Auto-play prevented:", e));
     }, 100);
   };
-
-  // Function to close the modal and pause video
   const closeModal = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
+    videoRef.current?.pause();
     setIsModalOpen(false);
   };
 
+  // Open & close booking modal
+  const openBookingModal = () => setIsBookingModalOpen(true);
+  const closeBookingModal = () => setIsBookingModalOpen(false);
+
   return (
-    <section id="home" className="relative w-full h-screen flex items-center justify-center bg-lotus-cream overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
-          filter: "brightness(0.85)"
+    <section id="home" className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-black/50 z-30 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: "url('/assets/images/_FJS0062.webp')",
+          filter: "brightness(0.85)",
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 z-10"></div>
+      <div className="absolute inset-0"></div>
       <div className="container mx-auto px-6 text-center relative z-20">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 hero-heading animate-fade-in">
-          Experience Luxury in <span className="text-lotus-orange">Ilorin</span>
+        <h1 className="text-[50px] md:text-6xl font-bold text-white mb-4 hero-heading animate-fade-in">
+          Experience homely comfort in Ilorin
         </h1>
-        <p className="text-white text-xl md:text-;g mb-8 mx-auto max-w-[70%] font-light animate-fade-in">
-          The premier shortlet experience, where comfort meets elegance. Enjoy a serene escape with class amenities and service.
+        <p className="text-white text-xl md:text-lg mb-8 mx-auto md:max-w-[75%] font-light animate-fade-in">
+          The premier shortlet experience in Ilorin, where comfort meets elegance. Enjoy a serene escape with class amenities and service.
         </p>
-        <div className="flex flex-col md:flex-row gap-4 justify-center animate-fade-in">
-          <button className="book-button">
+        <div className="flex flex-row gap-4 justify-center animate-fade-in">
+          <button onClick={openBookingModal} className="book-button">
             Book Your Stay
           </button>
           <button
@@ -54,9 +52,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Video Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50 backdrop-blur-sm">
+        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
           <div className="relative rounded-lg flex items-center gap-10 flex-col-reverse max-w-3xl w-full mx-4">
             <button
               onClick={closeModal}
@@ -68,12 +66,7 @@ const Hero = () => {
               </svg>
             </button>
             <div className="aspect-video w-full overflow-hidden rounded-lg">
-              <video
-                ref={videoRef}
-                className="w-full h-full object-cover"
-                controls
-                preload="metadata"
-              >
+              <video ref={videoRef} className="w-full h-full object-cover" controls preload="metadata">
                 <source src="/assets/tour.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -81,6 +74,41 @@ const Hero = () => {
           </div>
         </div>
       )}
+
+      {/* Booking Modal */}
+      {isBookingModalOpen && (
+  <div className="fixed w-scren h-screen inset-0 bg-black/50 flex justify-center items-center z-50">
+    <div className="bg-white rounded-lg p-6 w-full max-w-md text-center flex flex-col items-center">
+      <h2 className="text-2xl text-orange-400 font-bold mb-4">Book Your Stay</h2>
+      <p className="text-gray-600 mb-6">To book a shortlet apartment, call or send an email</p>
+      <div className="icons flex flex-col w-full items-center gap-5">
+        {/* Phone Section */}
+        <a href="tel:+2348065771879" className="w-full">
+          <div className="one bg-orange-50 p-5 rounded-lg w-full flex flex-col items-center cursor-pointer hover:bg-orange-200 transition-colors">
+            <div className="w-[50px] h-[50px] flex items-center justify-center text-orange-400 rounded-full bg-orange-50">
+              <Phone />
+            </div>
+            <p className="pt-2 contact-card-title">+234 806 577 1879</p>
+          </div>
+        </a>
+
+        {/* Email Section */}
+        <a href="mailto:info@lotusresidences.com" className="w-full">
+          <div className="one bg-orange-50 p-5 rounded-lg w-full flex flex-col items-center cursor-pointer hover:bg-orange-200 transition-colors">
+            <div className="w-[50px] h-[50px] flex items-center justify-center text-orange-400 rounded-full bg-orange-50">
+              <Mail />
+            </div>
+            <p className="pt-2 contact-card-title">info@lotusresidences.com</p>
+          </div>
+        </a>
+      </div>
+      <button onClick={closeBookingModal} className="mt-4 text-red-500 font-semibold hover:underline cursor-pointer underline-offset-6">
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
     </section>
   );
 };

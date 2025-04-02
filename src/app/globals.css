@@ -37,13 +37,12 @@ body {
 .hero-heading{
   font-family: "Playfair", serif;
   color: white;
-  font-size: 60px;
 }
 
 .section-heading{
   font-family: "Playfair", serif;
   color: black;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 .navitem{
@@ -58,6 +57,12 @@ body {
 .footer-title{
   font-family: "Playfair", serif;
   color: white;
+  font-size: 20px;
+}
+
+.contact-card-title{
+  font-family: "Playfair", serif;
+  color: black;
   font-size: 20px;
 }
 
