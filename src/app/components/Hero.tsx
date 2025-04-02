@@ -23,7 +23,7 @@ const Hero = () => {
   const closeBookingModal = () => setIsBookingModalOpen(false);
 
   return (
-    <section id="home" className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-black/50 z-30 overflow-hidden">
+    <section id="home" className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-black/50 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
