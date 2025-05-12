@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <h2 className="section-heading text-center">Contact & Booking</h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Ready to experience comfort in Ilorin? Reach out to us for inquiries or to book your stay at Lotus Residences.
+          Ready to experience comfort in Ilorin? Reach out to us for inquiries or to book your stay at Lotus Residence.
         </p>
         
         <div className="flex">
@@ -51,9 +51,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium card-title">Email</h4>
-                    <p className="text-gray-700">bookings@lotusresidences.com</p>
-                    <p className="text-gray-700">info@lotusresidences.com</p>
-                  </div>
+                    <p className="text-gray-700"><a href="mailto:lotusresidence@outlook.com">lotusresidence@outlook.com</a></p>
+                    </div>
                 </div>
 
                 <div className="flex items-start gap-4">
@@ -72,7 +71,7 @@ const Contact = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-md h-full md:h-80 w-full lg:w-[50%]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.150385275592!2d4.514824874626482!3d8.526093194042947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10365287c3b1c8c3%3A0x9e3c4c6b7e1b9a1f!2s42%20Gerewu%20Road%2C%20Islamic%20Village%2C%20Ilorin%2C%20Kwara%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1710437062317!5m2!1sen!2sng" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31569.815460936232!2d4.468114080443225!3d8.477301410356205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103653ef4de0a005%3A0x44b9dbdd31e3635f!2sLotus%20Residence%2C%20Ilorin!5e0!3m2!1sen!2sng!4v1743935220895!5m2!1sen!2sng" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

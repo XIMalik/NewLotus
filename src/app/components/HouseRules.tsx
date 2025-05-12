@@ -58,7 +58,7 @@ import {
         <div className="container mx-auto px-6">
           <h2 className="section-heading text-center">House Rules & Regulations</h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            To ensure a pleasant stay for all our guests, we kindly ask you to observe the following rules during your visit to Lotus Residences.
+            To ensure a pleasant stay for all our guests, we kindly ask you to observe the following rules during your visit to Lotus Residence.
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">

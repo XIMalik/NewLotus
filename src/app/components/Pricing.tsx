@@ -213,12 +213,12 @@ const Pricing = () => {
             </a>
     
             {/* Email Section */}
-            <a href="mailto:info@lotusresidences.com" className="w-full">
+            <a href="mailto:lotusresidence@outlook.com" className="w-full">
               <div className="one bg-orange-50 p-5 rounded-lg w-full flex flex-col items-center cursor-pointer hover:bg-orange-200 transition-colors">
                 <div className="w-[50px] h-[50px] flex items-center justify-center text-orange-400 rounded-full bg-orange-50">
                   <Mail />
                 </div>
-                <p className="pt-2 contact-card-title">info@lotusresidences.com</p>
+                <p className="pt-2 contact-card-title">lotusresidence@outlook.com</p>
               </div>
             </a>
           </div>

@@ -69,7 +69,7 @@ const Amenities = () => {
       <div className="container mx-auto px-6">
         <h2 className="section-heading text-center">Premium Amenities</h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          Experience the finest comforts and conveniences at Lotus Residences. Our premium amenities ensure your stay is nothing short of extraordinary.
+          Experience the finest comforts and conveniences at Lotus Residence. Our premium amenities ensure your stay is nothing short of extraordinary.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

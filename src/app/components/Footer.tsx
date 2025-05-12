@@ -12,12 +12,12 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-orange-400 subsection-heading">Lotus Residences, Ilorin</h3>
+            <h3 className="text-2xl font-bold mb-4 text-orange-400 subsection-heading">Lotus Residence, Ilorin</h3>
             <p className="mb-4 text-gray-300">
               Our premium shortlets offer the perfect blend of comfort, style, and convenience. Welcome to home away from home.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/lotusresidencesilorin/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-lotus-orange transition-colors">
+              <a href="https://www.instagram.com/lotusResidenceilorin/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-lotus-orange transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="text-white hover:text-lotus-orange transition-colors">
@@ -60,14 +60,14 @@ const Footer = () => {
               <p>42 Gerewu Road, Islamic Village</p>
               <p>Ilorin, Kwara State, Nigeria</p>
               <p className="pt-2"><a href="tel:+2348065771879">+234 806 577 1879</a></p>
-              <p><a href="mailto:info@lotusresidences.com">info@lotusresidences.com</a></p>
+              <p><a href="mailto:lotusresidence@outlook.com">lotusresidence@outlook.com</a></p>
             </address>
           </div>
         </div>
         
         <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Lotus Residences. All rights reserved.
+            &copy; {new Date().getFullYear()} Lotus Residence. All rights reserved.
           </p>
         </div>
         
