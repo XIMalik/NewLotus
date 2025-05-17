@@ -39,10 +39,22 @@ body {
   color: white;
 }
 
-.section-heading{
+.section-heading {
   font-family: "Playfair", serif;
   color: black;
-  font-size: 45px;
+  font-size: 32px;
+}
+
+@media (min-width: 600px) {
+  .section-heading {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 40px;
+  }
 }
 
 .navitem{

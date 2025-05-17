@@ -33,7 +33,7 @@ const Hero = () => {
       ></div>
       <div className="absolute inset-0"></div>
       <div className="container mx-auto px-6 text-center relative z-20">
-        <h1 className="text-[50px] md:text-6xl font-bold text-white mb-4 hero-heading animate-fade-in">
+        <h1 className="text-[50px] md:text-6xl font-bold text-white mb-4 hero-heading leading-[55px] animate-fade-in">
           Experience homely comfort in Ilorin
         </h1>
         <p className="text-white text-xl md:text-lg mb-8 mx-auto md:max-w-[75%] font-light animate-fade-in">

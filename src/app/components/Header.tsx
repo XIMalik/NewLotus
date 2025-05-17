@@ -32,7 +32,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link href="#" className="flex items-center">
-          <span className={`text-2xl font-bold ${scrolled ? "text-orange-400" : "text-white"} text-orange-400 logo`}>
+          <span className={`text-lg md:text-2xl font-bold ${scrolled ? "text-orange-400" : "text-white"} text-orange-400 logo`}>
             Lotus Residence, Ilorin
           </span>
         </Link>
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
         <button onClick={openBookingModal} className="book-button hidden lg:block">
           Book Now
         </button>
-        <Menu onClick={() => setMobile(!mobile)} className="cursor-pointer flex lg:hidden text-orange-400" />
+        <Menu onClick={() => setMobile(!mobile)} className={`cursor-pointer flex lg:hidden  ${scrolled ? "text-orange-400" : "text-white"}`} />
       </div>
 
       {/* Mobile Menu */}

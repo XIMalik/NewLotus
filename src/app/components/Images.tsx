@@ -5,9 +5,19 @@ import Image from "next/image";
 
 const images = [
   {
+    url: "/assets/images/LotusResidence.webp",
+    alt: "Lotus Residence compound",
+    title: "Lotus Residence Compound"
+  },
+  {
     url: "/assets/images/_FJS0062.webp",
     alt: "Luxury living room with elegant furniture",
     title: "Spacious Living Room"
+  },
+  {
+    url: "/assets/images/nightView.webp",
+    alt: "Compound view at night",
+    title: "Compound View at Night"
   },
   {
     url: "/assets/images/_FJS0001.webp",
@@ -106,7 +116,7 @@ const ImageCarousel = () => {
   return (
     <section id="gallery" className="py-20 w-full">
       <div className="container mx-auto px-6">
-        <h2 className="section-heading text-center">Discover Lotus Residence</h2>
+        <h2 className="section-heading text-center mb-2">Discover Lotus Residence</h2>
         
         <div className="relative rounded-xl overflow-hidden h-[50vh] md:h-[70vh] mb-4">
           {images.map((image, index) => (
