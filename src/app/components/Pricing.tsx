@@ -6,15 +6,15 @@ import { Check, Calendar, Users, CreditCard, Phone, Mail } from "lucide-react";
 const pricingData = {
   regularRates: [
     { period: "Studio Apartment", price: "₦35,000", note: "per night" },
-    { period: "1 Bedroom Apartment", price: "₦50,000", note: "per night" },
-    { period: "2 Bedroom Apartment", price: "₦70,000", note: "7 nights" },
-    { period: "2 Bed Maisonette", price: "₦85,000", note: "30 nights" }
+    { period: "1 Bedroom Apartment", price: "₦55,000", note: "per night" },
+    { period: "2 Bedroom Apartment", price: "₦75,000", note: "per night" },
+    { period: "2 Bed Maisonette", price: "₦85,000", note: "per night" }
   ],
   seasonalRates: [
     { period: "Studio Apartment", price: "₦35,000", note: "per night" },
     { period: "1 Bedroom Apartment", price: "₦50,000", note: "per night" },
-    { period: "2 Bedroom Apartment", price: "₦70,000", note: "7 nights" },
-    { period: "2 Bed Maisonette", price: "₦85,000", note: "30 nights" }
+    { period: "2 Bedroom Apartment", price: "₦70,000", note: "per night" },
+    { period: "2 Bed Maisonette", price: "₦85,000", note: "per night" }
   ],
   additionalFees: [
     { item: "Cleaning Fee", price: "₦15,000", note: "one-time fee" },
@@ -132,12 +132,12 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div>
-            <h3 className="subsection-heading text-black">Regular Rates</h3>
-            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-lotus-cream">
+            <h3 className="subsection-heading text-black">Apartment Rates</h3>
+            <div className="bg-white rounded-xl shadow-md overflow-hidden border border-lotus-cream mb-6">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-[#FFF8F0] text-black">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-lotus-charcoal">Room</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-lotus-charcoal">Apartment</th>
                     <th className="px-6 py-4 text-right text-sm font-semibold text-lotus-charcoal">Rate</th>
                   </tr>
                 </thead>
@@ -155,7 +155,9 @@ const Pricing = () => {
               </table>
             </div>
 
-            <h3 className="subsection-heading mt-8 text-black">Seasonal Rates</h3>
+                  <BookingDetails />
+
+            {/* <h3 className="subsection-heading mt-8 text-black">Seasonal Rates</h3>
             <div className="bg-white rounded-xl shadow-md overflow-hidden border border-lotus-cream">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-[#FFF8F0] text-black">
@@ -176,20 +178,17 @@ const Pricing = () => {
                   ))}
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </div>
 
           <div className="space-y-6">
             <PaymentPolicies />
             <CancellationPolicy />
-            <BookingDetails />
           </div>
         </div>
 
         <div className="text-center">
-          <p className="italic text-gray-600 mb-6">
-            *Prices are subject to change during special events or holidays. Contact us for current rates.
-          </p>
+
           <button onClick={openBookingModal} className="book-button">
             Check Availability & Book
           </button>
