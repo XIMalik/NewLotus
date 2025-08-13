@@ -7,14 +7,14 @@ import HouseRules from "./components/HouseRules";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Head from 'next/head';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
-
-// Add this to your page.js file as an export
 export const metadata = {
   title: "Lotus Residence, Ilorin | Serene Shortlet Apartments in Ilorin",
   description: "Experience our stunning shortlet apartments with premium amenities, great views, and affordable pricing. Book your stay at Lotus Residence today!",
   
-  keywords: "vacation, rental, vacation rental, accommodation, getaway, holiday home, rental property, shortlet, Ilorin, Nigeria",
+  keywords: "vacation, rental, vacation rental, accommodation, getaway, holiday home, rental property, shortlet, staycation, apartments, ilorin, nigeria, lagos, abuja, Ilorin, Nigeria, hotel, hotels, resort, resorts, guest house, guesthouse, hostel, bed and breakfast, B&B, serviced apartment, serviced apartments, lodge, lodges, villa, villas, cabin, cabins, chalet, chalets, inn, inns, motel, motels, cottage, cottages, suite, suites, studio apartment",
   authors: [{ name: "Lotus Residence", url: "https://lotusresidenceilorin.ng" }],
   
   robots: {
@@ -47,7 +47,6 @@ export const metadata = {
     type: "website",
   },
   
-  // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
     title: "Lotus Residence, Ilorin | Serene Shortlet Apartments in Ilorin",
@@ -56,11 +55,9 @@ export const metadata = {
     images: "https://lotusresidenceilorin.ng/images/_FJS0062.webp",
   },
   
-  // Application name
   applicationName: "Lotus Residence, Ilorin", 
   
-  // Other metadata
-  category: "Travel, Vacation Rentals",
+  category: "Travel, Vacation Rentals, Accommodation, Housing, Hotels, Lodging, Shortlet Apartments, Staycation, Getaway, Holiday Homes, Rental Properties, Vacation Homes, Guest Houses, Serviced Apartments, Villas, Cottages, Inns, Motels",
   publisher: "Lotus Residence, Ilorin",
   publisherLogo: "/images/logo.png",
   generator: "Next.js",
@@ -70,6 +67,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <SpeedInsights/>
+      <Analytics/>
       <Head>
         <title>Lotus Residence, Ilorin | Serene Shortlet Apartments in Ilorin</title>
         <meta
